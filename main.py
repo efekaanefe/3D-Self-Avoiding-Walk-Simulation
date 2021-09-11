@@ -121,7 +121,7 @@ class Self_Avoiding_Walk:
         if self.followig_last_step:
             x_last = projected[-1][0] + ORIGIN_X
             y_last = projected[-1][1] + ORIGIN_Y
-            print(x_last, y_last)
+            # print(x_last, y_last)
 
             frame = 30
             if not (frame < x_last < WIDTH - frame):
