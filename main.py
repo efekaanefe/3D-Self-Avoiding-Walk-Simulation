@@ -103,8 +103,8 @@ class Self_Avoiding_Walk:
             # rotated = np.dot(ROT_MATRIX_Z, rotated)
             rotated = np.dot(ROT_MATRIX_Y, rotated)
 
-            DISTANCE = 3
-            z = 1 / (DISTANCE - rotated[2])
+            # DISTANCE = 3
+            # z = 1 / (DISTANCE - rotated[2])
             # PROJECTION adjusted to give perspective
             projected2d = np.dot(PROJECTION, rotated)
             projected2d *= 15
