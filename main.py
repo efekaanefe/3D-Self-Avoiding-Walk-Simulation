@@ -150,8 +150,8 @@ class Self_Avoiding_Walk:
                 y1 = coordinate[1] + ORIGIN_Y
                 x2 = coordinate_next[0] + ORIGIN_X
                 y2 = coordinate_next[1] + ORIGIN_Y
-
-                pygame.draw.line(WIN, RED, (x1, y1), (x2, y2), 1)
+                if 0<=x1<=WIDTH and 0<=x2<=WIDTH and 0<=y1<=HEIGHT and 0<=y2<=HEIGHT:
+                    pygame.draw.line(WIN, RED, (x1, y1), (x2, y2), 1)
 
 
 def main():
